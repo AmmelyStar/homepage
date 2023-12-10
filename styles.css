@@ -46,6 +46,7 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
+  
 }
 
 @media screen and (max-width: 576px) {
@@ -66,9 +67,18 @@ body {
     margin-right: 0;
   }
 }
-Contact info styles
 
-.contact-info__header,
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.contact-info__header{
+   text-align: center;
+}
+
 .contact-info__sub-header {
   text-align: center;
 }
@@ -130,7 +140,7 @@ Contact info styles
   border: 3px solid;
   border-color: var(--text-decoration-color);
 }
-Intro and skills styles
+
 
 .intro {
   display: flex;
@@ -166,9 +176,15 @@ Intro and skills styles
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  
 }
-Experience and additional info styles
+
+.skills{
+    padding: 20px;
+    
+}
 
 .experiences {
   flex: 1 1 60%;
@@ -199,6 +215,11 @@ Experience and additional info styles
 .experiences__company-project {
   margin-left: 15px;
   margin-bottom: 25px;
+}
+.experiences__company-header{
+    margin-bottom: 15px;
+    
+
 }
 
 .experiences__company-project-role {
@@ -231,14 +252,28 @@ Experience and additional info styles
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  
 }
+.additional-info__languages-header{
+    margin-top: 20px;
+}
+.item{
+    list-style: none;
+    text-decoration: none;
 
+}
+.link-project{
+    text-decoration: none;
+    color:  #d8aa64;
+    cursor: pointer;
+}
 .additional-info__education-university-durability {
   color: var(--durability-text-color);
   text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
 }
+
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
